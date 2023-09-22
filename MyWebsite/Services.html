@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="FirstWebsite.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .grand_parent{
+                width:100vw;
+                height:100vh;
+                background:#dfe6e9;color:#fff;
+            }
+        h1{
+            font-size: 4rem;
+            padding: 50px 0;
+            text-align: center;
+            color:#000;
+        }
+        p{
+            text-align: center;
+            position:absolute;
+            top:50%;
+            right:50%;
+            transform:translate(50%,-50%);
+        }
+        .parent{
+            width:80vw;
+            height:auto;
+            margin:auto;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            transition:all 0.2 linear;
+        }
+        .child{
+            width:200px;
+            height:200px;
+            margin:20px;
+            background: #81ece8;
+            box-shadow: 0 0 200p #bac3c3;
+            flex:1 1 ;
+            position:relative;
+        }
+        .child:first-child{
+            background:#ffbe76;
+
+        }
+        .child:last-child{
+            background:#ff7979;
+        }
+        @media(max-width:768px)
+        {
+            .grand_parent{height:auto};
+        }
+    </style>
+</head>
+<body>
+    <div class="MenuBar">
+        <div class="logo">
+            <img src="mehanilogo.jpg">
+        </div>
+        <ul>
+            <li><a href="FirstWebsite.html"><i class='bx bxs-home'></i>Home</a></li>
+            <li><a href="About_us.html"><i class='bx bxs-category-alt'></i> About us</a></li>
+            <li><a href="Services.html"><i class='bx bx-cog'></i>Services</a></li>
+            <li><a href="Pricing.html"><i class='bx bx-purchase-tag'></i>Pricing</a></li>
+            <li><a href="Products.html"><i class='bx bx-leaf'></i>Products</a></li>
+            <li><a href="Training.html"><i class='bx bx-list-plus'></i>Training</a></li>
+            <li><a href="Contact.html"><i class='bx bx-user-circle'></i>Contact</a></li>
+        </ul>
+    </div>
+    <div class="grand_parent">
+        <h1>Services</h1>
+         <div class="parent">
+            <div class="child">
+                <p>Chhavi Jain</p>
+            </div>
+            <div class="child">
+                <p>Chhavi Jain</p>
+            </div><div class="child">
+                <p>Chhavi Jain</p>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
